@@ -25,6 +25,7 @@ int main(void) {
         err_exit(err, "can't create thread");
     }
     print_ids("main thread:");
+    printf("%lu\n", (unsigned long)ntid);
     sleep(1);
     exit(0);
 }
